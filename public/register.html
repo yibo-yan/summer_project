@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Access - Game Design Application System</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            height: 100vh;
+            background-color: #fdf5e6;
+        }
+
+        .header {
+            background-color: #708090;
+            color: white;
+            padding: 60px 40px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 64px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .register-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 25px;
+            background-color: #708090;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #5f6e7d;
+        }
+
+        .text-center {
+            text-align: center;
+            color: #666;
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Apply for access</h1>
+    </div>
+
+    <div class="register-container">
+        <form action="confirmation.html">
+            <input type="email" class="input-field" placeholder="Email" required>
+            <button type="submit" class="submit-button">Send Email</button>
+            <p class="text-center">You will receive an email with further instructions</p>
+        </form>
+    </div>
+</body>
+</html>

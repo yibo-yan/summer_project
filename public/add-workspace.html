@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Workspace - Game Design Application System</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #fdf5e6;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            background-color: #ffefd5;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .welcome-text {
+            font-family: 'Poppins', Arial, sans-serif;
+            font-size: 20px;
+            color: #708090;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        .logout {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .year-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .year-tab {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: #d3d3d3;
+            cursor: pointer;
+        }
+
+        .year-tab.active {
+            background-color: #708090;
+            color: white;
+        }
+
+        .workspace-form {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 30px;
+        }
+
+        .input-label {
+            display: block;
+            color: #708090;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: white;
+        }
+
+        .create-button {
+            display: block;
+            width: 200px;
+            margin: 40px auto;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 20px;
+            background-color: #708090;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .create-button:hover {
+            background-color: #5f6e7d;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="welcome-text">Welcome! Billy Yan</h1>
+        <a href="index.html" class="logout">↪ Log Out</a>
+    </div>
+
+    <div class="year-tabs">
+        <div class="year-tab">2021 Summer</div>
+        <div class="year-tab active">2024 Summer</div>
+        <div class="year-tab">2022 Summer</div>
+        <div class="year-tab">2023 Summer</div>
+    </div>
+
+    <div class="workspace-form">
+        <div class="input-group">
+            <label class="input-label">Name:</label>
+            <input type="text" class="input-field" placeholder="2025 Summer">
+        </div>
+
+        <div class="input-group">
+            <label class="input-label">Connecting to DB</label>
+            <input type="url" class="input-field" placeholder="url://">
+        </div>
+
+        <button class="create-button">Create</button>
+    </div>
+</body>
+</html> 

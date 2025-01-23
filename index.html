@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Design Application System</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background-color: #1a1a1a;
+        }
+
+        .header {
+            background-color: #6c757d;
+            color: white;
+            padding: 2rem;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            font-weight: 300;
+        }
+
+        .header h2 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        .content {
+            background-color: #ffefd5;
+            padding: 4rem;
+            min-height: calc(100vh - 200px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .search-bar {
+            width: 80%;
+            max-width: 800px;
+            padding: 1rem;
+            margin: 2rem 0 4rem 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .menu-item {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            cursor: pointer;
+        }
+
+        .menu-item h3 {
+            margin: 0;
+            color: #333;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        .footer {
+            background-color: #6c757d;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome,</h1>
+        <h2>Coding for Game Design Application System</h2>
+    </div>
+
+    <div class="content">
+        <input type="text" class="search-bar" placeholder="Search...">
+        
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>My Projects</h3>
+            </div>
+            <div class="menu-item">
+                <h3>Create New Project</h3>
+            </div>
+            <div class="menu-item">
+                <h3>Templates</h3>
+            </div>
+            <div class="menu-item">
+                <h3>Settings</h3>
+            </div>
+            <div class="menu-item">
+                <h3>Documentation</h3>
+            </div>
+            <div class="menu-item">
+                <h3>Community</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 CREATE. All rights reserved.</p>
+    </div>
+</body>
+</html> 

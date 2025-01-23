@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Your Password - Game Design Application System</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            height: 100vh;
+            background-color: #fdf5e6;
+        }
+
+        .header {
+            background-color: #708090;
+            color: white;
+            padding: 60px 40px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 64px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .loading-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #708090;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 30px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .message {
+            color: #666;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = "/set-password.html";  // Changed from confirmation.html to set-password.html
+            }, 5000);
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Set Your Password</h1>
+    </div>
+
+    <div class="loading-container">
+        <div class="spinner"></div>
+        <p class="message">Processing your request...</p>
+    </div>
+</body>
+</html> 
